@@ -8,7 +8,7 @@ function SearchBar({
   setQuery,
 }: SearchBarProps) {
   return (
-    <div className="flex flex-col justify-start items-center h-[80vh] p-2 w-1/2 border-t-2 border-b-2 backdrop-blur-xs border-white rounded-2xl drop-shadow-2xl shadow-2xl gap-2">
+    <div className="flex flex-col justify-start items-center h-[80vh] p-2 w-1/2 max-md:w-screen border-t-2 border-b-2 backdrop-blur-xs border-white rounded-2xl drop-shadow-2xl shadow-2xl gap-2">
       <div className="backdrop-blur-3xl w-full">
         <SeachInput setQuery={setQuery} />
       </div>

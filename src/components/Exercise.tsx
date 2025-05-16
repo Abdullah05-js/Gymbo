@@ -10,8 +10,8 @@ function Exercise({
   isButtonVisble,
 }: ExerciseProps) {
   return (
-    <div className="flex flex-row justify-center items-start w-full bg-white rounded-xl">
-      <div className="flex flex-row gap-0  items-start">
+    <div className="flex flex-row justify-center items-start w-full max-md:flex-col bg-white rounded-xl">
+      <div className="flex flex-row gap-0 max-md:flex-col items-start">
         {isButtonVisble && (
           <Button
             type="button"
@@ -55,7 +55,7 @@ function Exercise({
         <img src={gif} alt={alt} className="object-cover  p-2" />
       </div>
       <div className="flex flex-col p-2">
-        <div className="flex flex-col h-full w-full">
+        <div className="flex flex-col  w-full">
           <h1 className="font-bold text-xl text-black text-center">{name}</h1>
           <p className="font-bold text-lg text-black  text-wrap text-center">
             {content},{target}

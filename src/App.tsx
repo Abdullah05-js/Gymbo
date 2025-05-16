@@ -68,8 +68,8 @@ function App() {
 
       {isModalOpen && <Modal onClose={() => setIsModalOpen(false)} />}
 
-      <div className="flex flex-row justify-between items-start w-full">
-        <div className="flex flex-row justify-center max-md:flex-col  items-start w-1/2 ">
+      <div className="flex flex-row justify-between items-start w-full max-md:flex-col-reverse max-md:items-center max-md:justify-center">
+        <div className="flex flex-row justify-center max-md:flex-col  items-start max-md:items-center w-1/2 ">
           <BodyMapFront
             onClick={(event) => {
               setQuery(event.currentTarget.id);
